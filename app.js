@@ -26,5 +26,6 @@ socketIO.on('connection', function (client) {
 var port = process.env.PORT || 3344;
 httpServer.listen(port, function (err) {
   if (err) console.log(err);
+  console.log("port number :",process.env.PORT);
   console.log('Listening on port', port);
 });
