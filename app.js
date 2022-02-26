@@ -11,9 +11,12 @@ socketIO.on('connection', function (client) {
     socketIO.emit('message', data);
   })
 
+
+
 //listens when a user is disconnected from the server
   client.on('disconnect', function () {
-    console.log('Disconnected...', client.id);
+
+    console.log('Disconnected......', client.id);
   })
 
 //listens when there's an error detected and logs the error on the console
